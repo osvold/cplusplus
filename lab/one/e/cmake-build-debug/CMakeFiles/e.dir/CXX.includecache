@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/lab/one/e/main.cpp
+naturalNumbers.h
+/Users/hans/Code/Personal/c++/lab/one/e/naturalNumbers.h
+
+/Users/hans/Code/Personal/c++/lab/one/e/naturalNumbers.cpp
+iostream
+-
+naturalNumbers.h
+/Users/hans/Code/Personal/c++/lab/one/e/naturalNumbers.h
+
+/Users/hans/Code/Personal/c++/lab/one/e/naturalNumbers.h
+

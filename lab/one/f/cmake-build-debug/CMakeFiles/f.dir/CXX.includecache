@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/lab/one/f/main.cpp
+shouldSayHello.h
+/Users/hans/Code/Personal/c++/lab/one/f/shouldSayHello.h
+sayHello.h
+/Users/hans/Code/Personal/c++/lab/one/f/sayHello.h
+
+/Users/hans/Code/Personal/c++/lab/one/f/sayHello.cpp
+iostream
+-
+sayHello.h
+/Users/hans/Code/Personal/c++/lab/one/f/sayHello.h
+
+/Users/hans/Code/Personal/c++/lab/one/f/sayHello.h
+
+/Users/hans/Code/Personal/c++/lab/one/f/shouldSayHello.cpp
+iostream
+-
+shouldSayHello.h
+/Users/hans/Code/Personal/c++/lab/one/f/shouldSayHello.h
+
+/Users/hans/Code/Personal/c++/lab/one/f/shouldSayHello.h
+

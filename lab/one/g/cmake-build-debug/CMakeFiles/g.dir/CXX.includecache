@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/lab/one/g/giveNumber.cpp
+iostream
+-
+giveNumber.h
+/Users/hans/Code/Personal/c++/lab/one/g/giveNumber.h
+
+/Users/hans/Code/Personal/c++/lab/one/g/giveNumber.h
+
+/Users/hans/Code/Personal/c++/lab/one/g/main.cpp
+sayHello.h
+/Users/hans/Code/Personal/c++/lab/one/g/sayHello.h
+giveNumber.h
+/Users/hans/Code/Personal/c++/lab/one/g/giveNumber.h
+printLargestNumber.h
+/Users/hans/Code/Personal/c++/lab/one/g/printLargestNumber.h
+
+/Users/hans/Code/Personal/c++/lab/one/g/printLargestNumber.cpp
+iostream
+-
+printLargestNumber.h
+/Users/hans/Code/Personal/c++/lab/one/g/printLargestNumber.h
+
+/Users/hans/Code/Personal/c++/lab/one/g/printLargestNumber.h
+
+/Users/hans/Code/Personal/c++/lab/one/g/sayHello.cpp
+iostream
+-
+sayHello.h
+/Users/hans/Code/Personal/c++/lab/one/g/sayHello.h
+
+/Users/hans/Code/Personal/c++/lab/one/g/sayHello.h
+
