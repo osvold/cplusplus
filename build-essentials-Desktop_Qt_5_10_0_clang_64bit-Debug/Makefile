@@ -50,8 +50,16 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../essentials/main.cpp 
-OBJECTS       = main.o
+SOURCES       = ../essentials/main.cpp \
+		../essentials/helloworld.cpp \
+		../essentials/loops.cpp \
+		../essentials/datatypes.cpp \
+		../essentials/functions.cpp 
+OBJECTS       = main.o \
+		helloworld.o \
+		loops.o \
+		datatypes.o \
+		functions.o
 DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/qdevice.pri \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/device_config.prf \
@@ -187,6 +195,7 @@ DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_post.prf \
+		../essentials/.qmake.stash \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/mac/sdk.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/toolchain.prf \
@@ -212,7 +221,14 @@ DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/exceptions.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/yacc.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/lex.prf \
-		../essentials/essentials.pro  ../essentials/main.cpp
+		../essentials/essentials.pro ../essentials/helloworld.h \
+		../essentials/loops.h \
+		../essentials/datatypes.h \
+		../essentials/functions.h ../essentials/main.cpp \
+		../essentials/helloworld.cpp \
+		../essentials/loops.cpp \
+		../essentials/datatypes.cpp \
+		../essentials/functions.cpp
 QMAKE_TARGET  = essentials
 DESTDIR       = 
 TARGET        = essentials
@@ -364,6 +380,7 @@ Makefile: ../essentials/essentials.pro ../../../../Qt/5.10.0/clang_64/mkspecs/ma
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/mac/sdk.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/toolchain.prf \
@@ -527,6 +544,7 @@ Makefile: ../essentials/essentials.pro ../../../../Qt/5.10.0/clang_64/mkspecs/ma
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/mac/sdk.prf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/toolchain.prf:
@@ -569,7 +587,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt/5.10.0/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../essentials/main.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../essentials/helloworld.h ../essentials/loops.h ../essentials/datatypes.h ../essentials/functions.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../essentials/main.cpp ../essentials/helloworld.cpp ../essentials/loops.cpp ../essentials/datatypes.cpp ../essentials/functions.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -579,6 +598,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) $(TARGET) 
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -619,8 +639,21 @@ compiler_clean: compiler_moc_predefs_clean
 ####### Compile
 
 main.o: ../essentials/main.cpp ../../../../Qt/5.10.0/clang_64/lib/QtCore.framework/Headers/QCoreApplication \
-		../../../../Qt/5.10.0/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h
+		../../../../Qt/5.10.0/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
+		../essentials/helloworld.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../essentials/main.cpp
+
+helloworld.o: ../essentials/helloworld.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o helloworld.o ../essentials/helloworld.cpp
+
+loops.o: ../essentials/loops.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o loops.o ../essentials/loops.cpp
+
+datatypes.o: ../essentials/datatypes.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o datatypes.o ../essentials/datatypes.cpp
+
+functions.o: ../essentials/functions.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o functions.o ../essentials/functions.cpp
 
 ####### Install
 

@@ -1,75 +1,28 @@
-//#include <QCoreApplication>
+#include <QCoreApplication>
 #include <iostream>
+#include "helloworld.h"
+#include "datatypes.h"
+#include "loops.h"
+#include "functions.h"
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-   int x = 10;
+    QCoreApplication a(argc, argv);
+    helloWorld();
+    dataTypes();
+    loops();
 
-   // referanse til x
-   int &y = x;
+    int i = 15;
+    printf("The value of i is %d\n", i);
+    printf("Going into addFiveAndPrintPassedByValue()\n");
+    addFiveAndPrintPassedByValue(i);
+    printf("Outside of addFiveAndPrintPassedByValue()\n");
+    printf("The value of i is %d\n", i);
+    printf("Going into addFiveAndPrintPassedByReference()\n");
+    addFiveAndPrintPassedByReference(i);
+    printf("Outside of addFiveAndPrintPassedByReference()\n");
+    printf("The value of i is %d\n", i);
 
-   // pointer til x-sin verdi i minne
-   int *ip = &x;
-
-   printf("The value of x is %d\n", x);
-   printf("The value of y is %d\n", y);
-   printf("The value of *ip is %d\n", *ip);
-
-   x = 42;
-   printf("The value of x is %d\n", x);
-   printf("The value of y is %d\n", y);
-   printf("The value of *ip is %d\n", *ip);
-
-   y = 73;
-   printf("The value of x is %d\n", x);
-   printf("The value of y is %d\n", y);
-   printf("The value of *ip is %d\n", *ip);
-
-   int z = 149;
-   ip = &z;
-   printf("The value of x is %d\n", x);
-   printf("The value of y is %d\n", y);
-   printf("The value of *ip is %d\n", *ip);
-   printf("The value of z is %d\n", z);
-
-    y = z;
-    printf("The value of x is %d\n", x);
-    printf("The value of y is %d\n", y);
-    printf("The value of *ip is %d\n", *ip);
-    printf("The value of z is %d\n", z);
-
-    // loops
-
-    int a[] = { 1, 2, 3, 4, 5 };
-    int i = 0;
-    while(i < 5) {
-        printf("Element %d is %d\n", i, a[i]);
-        i++;
-    }
-
-    for(int i = 0; i < 5; i++) {
-        printf("Element %d is %d\n", i, a[i]);
-    }
-
-    char s[] = "string";
-    for(char * cp = s; *cp; ++cp) {
-        printf("Element is %c\n", *cp);
-    }
-
-    // range-based for loop
-    for(int i : a) {
-        printf("Element is %i\n", i);
-    }
-
-    for(char c : s) {
-        if(c == 0) break;
-        printf("Element is %c\n", c);
-    }
-
-    cout << "Hello, World!" << endl;
-
-    //    QCoreApplication a(argc, argv);
-    //    return a.exec();
-   return 0;
+   return a.exec();
 }
