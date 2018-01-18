@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int d = 12;
+
 int main() {
 
     int a = 10;
@@ -13,6 +15,11 @@ int main() {
 
     // should print out "a, b, c: 11, 11, 11"
     cout << "a, b, c: " << a << ", " << b << ", " << c << endl;
+
+    int d = 20;
+
+    // should print "d: 20"
+    cout << "d: " << d << endl;
 
     return 0;
 }
