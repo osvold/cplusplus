@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/labs/two/d/askForCost.cpp
+iostream
+-
+askForCost.h
+/Users/hans/Code/Personal/c++/labs/two/d/askForCost.h
+
+/Users/hans/Code/Personal/c++/labs/two/d/askForCost.h
+
+/Users/hans/Code/Personal/c++/labs/two/d/askForIncome.cpp
+iostream
+-
+askForIncome.h
+/Users/hans/Code/Personal/c++/labs/two/d/askForIncome.h
+
+/Users/hans/Code/Personal/c++/labs/two/d/askForIncome.h
+
+/Users/hans/Code/Personal/c++/labs/two/d/main.cpp
+iostream
+-
+iomanip
+-
+askForIncome.h
+/Users/hans/Code/Personal/c++/labs/two/d/askForIncome.h
+askForCost.h
+/Users/hans/Code/Personal/c++/labs/two/d/askForCost.h
+
