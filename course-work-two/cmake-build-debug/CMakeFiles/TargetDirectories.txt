@@ -1,0 +1,3 @@
+/Users/hans/Code/Personal/c++/course-work-two/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/hans/Code/Personal/c++/course-work-two/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hans/Code/Personal/c++/course-work-two/cmake-build-debug/CMakeFiles/course_work_two.dir

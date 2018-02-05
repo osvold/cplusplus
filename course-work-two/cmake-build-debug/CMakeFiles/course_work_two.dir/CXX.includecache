@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/course-work-two/main.cpp
+iostream
+-
+fstream
+-
+toptax.h
+/Users/hans/Code/Personal/c++/course-work-two/toptax.h
+
+/Users/hans/Code/Personal/c++/course-work-two/toptax.cpp
+iostream
+-
+toptax.h
+/Users/hans/Code/Personal/c++/course-work-two/toptax.h
+
+/Users/hans/Code/Personal/c++/course-work-two/toptax.h
+
