@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/cmake-build-debug

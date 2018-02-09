@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/computer.cpp
+computer.h
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/computer.h
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/computer.h
+vector
+-
+iostream
+-
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/game.cpp
+game.h
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/game.h
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/game.h
+iostream
+-
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/main.cpp
+iostream
+-
+vector
+-
+computer.h
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/computer.h
+player.h
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/player.h
+game.h
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/game.h
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/player.cpp
+player.h
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/player.h
+
+/Users/hans/Code/Personal/c++/labs/three/rock-paper-scissors/player.h
+iostream
+-
+

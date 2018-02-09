@@ -1,0 +1,3 @@
+/Users/hans/Code/Personal/c++/labs/three/bjarne7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/hans/Code/Personal/c++/labs/three/bjarne7/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hans/Code/Personal/c++/labs/three/bjarne7/cmake-build-debug/CMakeFiles/bjarne7.dir

@@ -18,10 +18,22 @@ SOURCES += main.cpp \
     helloworld.cpp \
     loops.cpp \
     datatypes.cpp \
-    functions.cpp
+    functions.cpp \
+    jump.cpp \
+    func-operator.cpp \
+    variadic.cpp \
+    factorial.cpp \
+    class1.cpp \
+    data-members-struct.cpp \
+    accessors.cpp \
+    accessors-two.cpp \
+    constructors.cpp \
+    implicit-explicit.cpp
 
 HEADERS += \
     helloworld.h \
     loops.h \
     datatypes.h \
-    functions.h
+    functions.h \
+    variadic.h \
+    factorial.h

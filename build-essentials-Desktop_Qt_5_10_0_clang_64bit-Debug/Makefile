@@ -54,12 +54,26 @@ SOURCES       = ../essentials/main.cpp \
 		../essentials/helloworld.cpp \
 		../essentials/loops.cpp \
 		../essentials/datatypes.cpp \
-		../essentials/functions.cpp 
+		../essentials/functions.cpp \
+		../essentials/func-operator.cpp \
+		../essentials/variadic.cpp \
+		../essentials/factorial.cpp \
+		../essentials/accessors.cpp \
+		../essentials/accessors-two.cpp \
+		../essentials/constructors.cpp \
+		../essentials/implicit-explicit.cpp 
 OBJECTS       = main.o \
 		helloworld.o \
 		loops.o \
 		datatypes.o \
-		functions.o
+		functions.o \
+		func-operator.o \
+		variadic.o \
+		factorial.o \
+		accessors.o \
+		accessors-two.o \
+		constructors.o \
+		implicit-explicit.o
 DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/qdevice.pri \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/device_config.prf \
@@ -224,11 +238,20 @@ DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../essentials/essentials.pro ../essentials/helloworld.h \
 		../essentials/loops.h \
 		../essentials/datatypes.h \
-		../essentials/functions.h ../essentials/main.cpp \
+		../essentials/functions.h \
+		../essentials/variadic.h \
+		../essentials/factorial.h ../essentials/main.cpp \
 		../essentials/helloworld.cpp \
 		../essentials/loops.cpp \
 		../essentials/datatypes.cpp \
-		../essentials/functions.cpp
+		../essentials/functions.cpp \
+		../essentials/func-operator.cpp \
+		../essentials/variadic.cpp \
+		../essentials/factorial.cpp \
+		../essentials/accessors.cpp \
+		../essentials/accessors-two.cpp \
+		../essentials/constructors.cpp \
+		../essentials/implicit-explicit.cpp
 QMAKE_TARGET  = essentials
 DESTDIR       = 
 TARGET        = essentials
@@ -587,8 +610,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt/5.10.0/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../essentials/helloworld.h ../essentials/loops.h ../essentials/datatypes.h ../essentials/functions.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../essentials/main.cpp ../essentials/helloworld.cpp ../essentials/loops.cpp ../essentials/datatypes.cpp ../essentials/functions.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../essentials/helloworld.h ../essentials/loops.h ../essentials/datatypes.h ../essentials/functions.h ../essentials/variadic.h ../essentials/factorial.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../essentials/main.cpp ../essentials/helloworld.cpp ../essentials/loops.cpp ../essentials/datatypes.cpp ../essentials/functions.cpp ../essentials/func-operator.cpp ../essentials/variadic.cpp ../essentials/factorial.cpp ../essentials/accessors.cpp ../essentials/accessors-two.cpp ../essentials/constructors.cpp ../essentials/implicit-explicit.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -640,7 +663,15 @@ compiler_clean: compiler_moc_predefs_clean
 
 main.o: ../essentials/main.cpp ../../../../Qt/5.10.0/clang_64/lib/QtCore.framework/Headers/QCoreApplication \
 		../../../../Qt/5.10.0/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
-		../essentials/helloworld.h
+		../essentials/helloworld.h \
+		../essentials/datatypes.h \
+		../essentials/loops.h \
+		../essentials/functions.h \
+		../essentials/jump.cpp \
+		../essentials/variadic.h \
+		../essentials/factorial.h \
+		../essentials/class1.cpp \
+		../essentials/data-members-struct.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../essentials/main.cpp
 
 helloworld.o: ../essentials/helloworld.cpp 
@@ -654,6 +685,27 @@ datatypes.o: ../essentials/datatypes.cpp
 
 functions.o: ../essentials/functions.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o functions.o ../essentials/functions.cpp
+
+func-operator.o: ../essentials/func-operator.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o func-operator.o ../essentials/func-operator.cpp
+
+variadic.o: ../essentials/variadic.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o variadic.o ../essentials/variadic.cpp
+
+factorial.o: ../essentials/factorial.cpp ../essentials/factorial.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o factorial.o ../essentials/factorial.cpp
+
+accessors.o: ../essentials/accessors.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accessors.o ../essentials/accessors.cpp
+
+accessors-two.o: ../essentials/accessors-two.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accessors-two.o ../essentials/accessors-two.cpp
+
+constructors.o: ../essentials/constructors.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o constructors.o ../essentials/constructors.cpp
+
+implicit-explicit.o: ../essentials/implicit-explicit.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o implicit-explicit.o ../essentials/implicit-explicit.cpp
 
 ####### Install
 

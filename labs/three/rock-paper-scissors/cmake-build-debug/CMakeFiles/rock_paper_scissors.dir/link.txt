@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/rock_paper_scissors.dir/main.cpp.o CMakeFiles/rock_paper_scissors.dir/computer.cpp.o CMakeFiles/rock_paper_scissors.dir/player.cpp.o CMakeFiles/rock_paper_scissors.dir/game.cpp.o  -o rock_paper_scissors 
