@@ -7,6 +7,14 @@
 #include <QSpinBox>
 #include <QLineEdit>
 #include <QDoubleSpinBox>
+#include <QPushButton>
+#include "taxcalculation.h"
+
+/**
+ * @brief The TaxCalculation class
+ *
+ * Written by Hans Petter Osvold, s929913@stud.hioa.no
+ */
 
 namespace Ui {
 class TaxCalculator;
@@ -57,6 +65,11 @@ private:
 
     QLabel *sumTaxLabel;
     QLineEdit *sumTaxLine;
+
+    QPushButton *submitBtn;
+
+private slots:
+    void handleButton();
 };
 
 #endif // TAXCALCULATOR_H

@@ -51,9 +51,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../s929913-personal-tax-calculator-v2/main.cpp \
-		../s929913-personal-tax-calculator-v2/taxcalculator.cpp moc_taxcalculator.cpp
+		../s929913-personal-tax-calculator-v2/taxcalculator.cpp \
+		../s929913-personal-tax-calculator-v2/taxcalculation.cpp moc_taxcalculator.cpp
 OBJECTS       = main.o \
 		taxcalculator.o \
+		taxcalculation.o \
 		moc_taxcalculator.o
 DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/qdevice.pri \
@@ -190,6 +192,7 @@ DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_post.prf \
+		../s929913-personal-tax-calculator-v2/.qmake.stash \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/mac/sdk.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/toolchain.prf \
@@ -217,8 +220,10 @@ DIST          = ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/exceptions.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/yacc.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/lex.prf \
-		../s929913-personal-tax-calculator-v2/s929913-personal-tax-calculator-v2.pro ../s929913-personal-tax-calculator-v2/taxcalculator.h ../s929913-personal-tax-calculator-v2/main.cpp \
-		../s929913-personal-tax-calculator-v2/taxcalculator.cpp
+		../s929913-personal-tax-calculator-v2/s929913-personal-tax-calculator-v2.pro ../s929913-personal-tax-calculator-v2/taxcalculator.h \
+		../s929913-personal-tax-calculator-v2/taxcalculation.h ../s929913-personal-tax-calculator-v2/main.cpp \
+		../s929913-personal-tax-calculator-v2/taxcalculator.cpp \
+		../s929913-personal-tax-calculator-v2/taxcalculation.cpp
 QMAKE_TARGET  = s929913-personal-tax-calculator-v2
 DESTDIR       = 
 TARGET        = s929913-personal-tax-calculator-v2.app/Contents/MacOS/s929913-personal-tax-calculator-v2
@@ -371,6 +376,7 @@ Makefile: ../s929913-personal-tax-calculator-v2/s929913-personal-tax-calculator-
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/mac/sdk.prf \
 		../../../../Qt/5.10.0/clang_64/mkspecs/features/toolchain.prf \
@@ -538,6 +544,7 @@ Makefile: ../s929913-personal-tax-calculator-v2/s929913-personal-tax-calculator-
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/mac/sdk.prf:
 ../../../../Qt/5.10.0/clang_64/mkspecs/features/toolchain.prf:
@@ -599,8 +606,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt/5.10.0/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../s929913-personal-tax-calculator-v2/taxcalculator.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../s929913-personal-tax-calculator-v2/main.cpp ../s929913-personal-tax-calculator-v2/taxcalculator.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../s929913-personal-tax-calculator-v2/taxcalculator.h ../s929913-personal-tax-calculator-v2/taxcalculation.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../s929913-personal-tax-calculator-v2/main.cpp ../s929913-personal-tax-calculator-v2/taxcalculator.cpp ../s929913-personal-tax-calculator-v2/taxcalculation.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../s929913-personal-tax-calculator-v2/taxcalculator.ui $(DISTDIR)/
 
 
@@ -611,6 +618,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r s929913-personal-tax-calculator-v2.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -646,6 +654,10 @@ moc_taxcalculator.cpp: ../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/He
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qlineedit.h \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QDoubleSpinBox \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
+		../s929913-personal-tax-calculator-v2/taxinformation.cpp \
+		../s929913-personal-tax-calculator-v2/taxcalculation.h \
 		../s929913-personal-tax-calculator-v2/taxcalculator.h \
 		moc_predefs.h \
 		../../../../Qt/5.10.0/clang_64/bin/moc
@@ -686,11 +698,19 @@ main.o: ../s929913-personal-tax-calculator-v2/main.cpp ../s929913-personal-tax-c
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qlineedit.h \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QDoubleSpinBox \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
+		../s929913-personal-tax-calculator-v2/taxinformation.cpp \
+		../s929913-personal-tax-calculator-v2/taxcalculation.h \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QApplication \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../s929913-personal-tax-calculator-v2/main.cpp
 
-taxcalculator.o: ../s929913-personal-tax-calculator-v2/taxcalculator.cpp ../s929913-personal-tax-calculator-v2/taxcalculator.h \
+taxcalculator.o: ../s929913-personal-tax-calculator-v2/taxcalculator.cpp ../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QHBoxLayout \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qboxlayout.h \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QSpacerItem \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+		../s929913-personal-tax-calculator-v2/taxcalculator.h \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QWidget \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qwidget.h \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QLabel \
@@ -702,8 +722,16 @@ taxcalculator.o: ../s929913-personal-tax-calculator-v2/taxcalculator.cpp ../s929
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qlineedit.h \
 		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QDoubleSpinBox \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
+		../../../../Qt/5.10.0/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
+		../s929913-personal-tax-calculator-v2/taxinformation.cpp \
+		../s929913-personal-tax-calculator-v2/taxcalculation.h \
 		ui_taxcalculator.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o taxcalculator.o ../s929913-personal-tax-calculator-v2/taxcalculator.cpp
+
+taxcalculation.o: ../s929913-personal-tax-calculator-v2/taxcalculation.cpp ../s929913-personal-tax-calculator-v2/taxcalculation.h \
+		../s929913-personal-tax-calculator-v2/taxinformation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o taxcalculation.o ../s929913-personal-tax-calculator-v2/taxcalculation.cpp
 
 moc_taxcalculator.o: moc_taxcalculator.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_taxcalculator.o moc_taxcalculator.cpp

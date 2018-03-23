@@ -27,30 +27,10 @@ SOURCES += \
         main.cpp \
         taxcalculator.cpp \
     taxcalculation.cpp \
-    taxinformation.cpp \
-    toptax.cpp \
-    fortunetax.cpp \
-    generaltax.cpp \
-    socialtax.cpp \
-    sumtaxes.cpp \
-    minimumdeduction.cpp \
-    worktraveldeduction.cpp \
-    laboruniondeduction.cpp \
-    bsudeduction.cpp
+    taxinformation.cpp
 
 HEADERS += \
         taxcalculator.h \
-    taxinformation.h \
-    toptax.h \
-    generaltax.h \
-    socialtax.h \
-    fortunetax.h \
-    sumtaxes.h \
-    minimumdeduction.h \
-    worktraveldeduction.h \
-    laboruniondeduction.h \
-    bsudeduction.h \
-    fortunetax.h \
     taxcalculation.h
 
 FORMS += \

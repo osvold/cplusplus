@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/assignments/two/one/b/Property.cpp
+Property.h
+/Users/hans/Code/Personal/c++/assignments/two/one/b/Property.h
+
+/Users/hans/Code/Personal/c++/assignments/two/one/b/Property.h
+
+/Users/hans/Code/Personal/c++/assignments/two/one/b/main.cpp
+iostream
+-
+vector
+-
+Property.h
+/Users/hans/Code/Personal/c++/assignments/two/one/b/Property.h
+
