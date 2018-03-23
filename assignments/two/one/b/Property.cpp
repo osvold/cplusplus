@@ -1,7 +1,6 @@
 //
 // Created by hans on 20/03/2018.
 //
-
 #include "Property.h"
 
 Property::Property(int countyParam, int estateParam, int lotParam, int leasedParam) {

@@ -1,10 +1,8 @@
 //
 // Created by hans on 20/03/2018.
 //
-
 #ifndef B_PROPERTY_H
 #define B_PROPERTY_H
-
 
 class Property {
     public:
@@ -28,6 +26,5 @@ class Property {
         int lot;
         int leased;
 };
-
 
 #endif //B_PROPERTY_H

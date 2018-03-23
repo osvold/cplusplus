@@ -12,6 +12,9 @@ int main() {
     return 0;
 }
 
+/**
+ * Test function for the Library as a whole - uses test_books() and test_patrons() to fill vectors with patrons and books.
+ */
 void test_library() {
     vector<Book> books = test_books();
     vector<Patron> patrons = test_patrons();
@@ -67,6 +70,11 @@ void test_library() {
 
 }
 
+/**
+ * Test function for the Book class.
+ * Creates some books.
+ * @return
+ */
 vector<Book> test_books() {
     Book book1("Clean Code", "0-13-235088-2", "Robert C. Martin", GenreEnum::NonFiction, Chrono::Date(2014, Chrono::Date::jan, 01));
     Book book2("Clean Coder", "0-13-708107-3", "Robert C. Martin", GenreEnum::Children, Chrono::Date(2016, Chrono::Date::jan, 01));
@@ -125,8 +133,13 @@ vector<Book> test_books() {
     return books;
 }
 
+/**
+ * Test function for the patron functionality.
+ * Creates some patrons.
+ * @return
+ */
 vector<Patron> test_patrons() {
-    Patron patron1("Ola Nordmann", 0101010101, 0.0);
+    Patron patron1("Hans Petter Osvold", 0101010101, 0.0);
     Patron patron2("Kari Nordmann", 0101010102, 8.0);
     Patron patron3("Petter Nortug", 0101010103, 100.0);
     Patron patron4("Kari Traa", 0101010104, 0.0);
