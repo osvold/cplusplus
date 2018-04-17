@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/LifeStatus.cpp
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/cell.cpp
+iostream
+-
+cell.h
+/Users/hans/Code/Personal/c++/assignments/game-of-life/cell.h
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/cell.h
+LifeStatus.cpp
+/Users/hans/Code/Personal/c++/assignments/game-of-life/LifeStatus.cpp
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/gameboard.cpp
+iostream
+-
+gameboard.h
+/Users/hans/Code/Personal/c++/assignments/game-of-life/gameboard.h
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/gameboard.h
+gameboard.h
+/Users/hans/Code/Personal/c++/assignments/game-of-life/gameboard.h
+cell.h
+/Users/hans/Code/Personal/c++/assignments/game-of-life/cell.h
+cstdio
+-
+vector
+-
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/main.cpp
+iostream
+-
+thread
+-
+gameboard.h
+/Users/hans/Code/Personal/c++/assignments/game-of-life/gameboard.h
+
