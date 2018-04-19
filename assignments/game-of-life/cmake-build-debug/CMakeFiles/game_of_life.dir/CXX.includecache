@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.cpp
+
 /Users/hans/Code/Personal/c++/assignments/game-of-life/LifeStatus.cpp
 
+/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.cpp
+
+/Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp
+
 /Users/hans/Code/Personal/c++/assignments/game-of-life/cell.cpp
-iostream
--
 cell.h
 /Users/hans/Code/Personal/c++/assignments/game-of-life/cell.h
 

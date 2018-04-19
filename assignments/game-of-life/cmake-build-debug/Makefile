@@ -123,6 +123,33 @@ game_of_life/fast:
 	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/build
 .PHONY : game_of_life/fast
 
+ConsolePrinter.o: ConsolePrinter.cpp.o
+
+.PHONY : ConsolePrinter.o
+
+# target to build an object file
+ConsolePrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o
+.PHONY : ConsolePrinter.cpp.o
+
+ConsolePrinter.i: ConsolePrinter.cpp.i
+
+.PHONY : ConsolePrinter.i
+
+# target to preprocess a source file
+ConsolePrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.i
+.PHONY : ConsolePrinter.cpp.i
+
+ConsolePrinter.s: ConsolePrinter.cpp.s
+
+.PHONY : ConsolePrinter.s
+
+# target to generate assembly for a file
+ConsolePrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.s
+.PHONY : ConsolePrinter.cpp.s
+
 LifeStatus.o: LifeStatus.cpp.o
 
 .PHONY : LifeStatus.o
@@ -149,6 +176,60 @@ LifeStatus.s: LifeStatus.cpp.s
 LifeStatus.cpp.s:
 	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/LifeStatus.cpp.s
 .PHONY : LifeStatus.cpp.s
+
+PrinterInterface.o: PrinterInterface.cpp.o
+
+.PHONY : PrinterInterface.o
+
+# target to build an object file
+PrinterInterface.cpp.o:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o
+.PHONY : PrinterInterface.cpp.o
+
+PrinterInterface.i: PrinterInterface.cpp.i
+
+.PHONY : PrinterInterface.i
+
+# target to preprocess a source file
+PrinterInterface.cpp.i:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.i
+.PHONY : PrinterInterface.cpp.i
+
+PrinterInterface.s: PrinterInterface.cpp.s
+
+.PHONY : PrinterInterface.s
+
+# target to generate assembly for a file
+PrinterInterface.cpp.s:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.s
+.PHONY : PrinterInterface.cpp.s
+
+RaspberryPiPrinter.o: RaspberryPiPrinter.cpp.o
+
+.PHONY : RaspberryPiPrinter.o
+
+# target to build an object file
+RaspberryPiPrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o
+.PHONY : RaspberryPiPrinter.cpp.o
+
+RaspberryPiPrinter.i: RaspberryPiPrinter.cpp.i
+
+.PHONY : RaspberryPiPrinter.i
+
+# target to preprocess a source file
+RaspberryPiPrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.i
+.PHONY : RaspberryPiPrinter.cpp.i
+
+RaspberryPiPrinter.s: RaspberryPiPrinter.cpp.s
+
+.PHONY : RaspberryPiPrinter.s
+
+# target to generate assembly for a file
+RaspberryPiPrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.s
+.PHONY : RaspberryPiPrinter.cpp.s
 
 cell.o: cell.cpp.o
 
@@ -240,9 +321,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... game_of_life"
+	@echo "... ConsolePrinter.o"
+	@echo "... ConsolePrinter.i"
+	@echo "... ConsolePrinter.s"
 	@echo "... LifeStatus.o"
 	@echo "... LifeStatus.i"
 	@echo "... LifeStatus.s"
+	@echo "... PrinterInterface.o"
+	@echo "... PrinterInterface.i"
+	@echo "... PrinterInterface.s"
+	@echo "... RaspberryPiPrinter.o"
+	@echo "... RaspberryPiPrinter.i"
+	@echo "... RaspberryPiPrinter.s"
 	@echo "... cell.o"
 	@echo "... cell.i"
 	@echo "... cell.s"

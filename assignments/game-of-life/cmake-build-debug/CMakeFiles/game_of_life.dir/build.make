@@ -153,12 +153,87 @@ CMakeFiles/game_of_life.dir/LifeStatus.cpp.o.provides: CMakeFiles/game_of_life.d
 CMakeFiles/game_of_life.dir/LifeStatus.cpp.o.provides.build: CMakeFiles/game_of_life.dir/LifeStatus.cpp.o
 
 
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o: CMakeFiles/game_of_life.dir/flags.make
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o: ../PrinterInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o -c /Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.cpp
+
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_of_life.dir/PrinterInterface.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.cpp > CMakeFiles/game_of_life.dir/PrinterInterface.cpp.i
+
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/PrinterInterface.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.cpp -o CMakeFiles/game_of_life.dir/PrinterInterface.cpp.s
+
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.requires:
+
+.PHONY : CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.requires
+
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.provides: CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.requires
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.provides.build
+.PHONY : CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.provides
+
+CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.provides.build: CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o
+
+
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o: CMakeFiles/game_of_life.dir/flags.make
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o: ../RaspberryPiPrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o -c /Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp
+
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp > CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.i
+
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp -o CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.s
+
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.requires:
+
+.PHONY : CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.requires
+
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.provides: CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.provides.build
+.PHONY : CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.provides
+
+CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.provides.build: CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o
+
+
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o: CMakeFiles/game_of_life.dir/flags.make
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o: ../ConsolePrinter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o -c /Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.cpp
+
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.cpp > CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.i
+
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.cpp -o CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.s
+
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.requires:
+
+.PHONY : CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.requires
+
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.provides: CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.provides.build
+.PHONY : CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.provides
+
+CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.provides.build: CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o
+
+
 # Object files for target game_of_life
 game_of_life_OBJECTS = \
 "CMakeFiles/game_of_life.dir/main.cpp.o" \
 "CMakeFiles/game_of_life.dir/gameboard.cpp.o" \
 "CMakeFiles/game_of_life.dir/cell.cpp.o" \
-"CMakeFiles/game_of_life.dir/LifeStatus.cpp.o"
+"CMakeFiles/game_of_life.dir/LifeStatus.cpp.o" \
+"CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o" \
+"CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o" \
+"CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o"
 
 # External object files for target game_of_life
 game_of_life_EXTERNAL_OBJECTS =
@@ -167,9 +242,12 @@ game_of_life: CMakeFiles/game_of_life.dir/main.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/gameboard.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/cell.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/LifeStatus.cpp.o
+game_of_life: CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o
+game_of_life: CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o
+game_of_life: CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/build.make
 game_of_life: CMakeFiles/game_of_life.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable game_of_life"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable game_of_life"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game_of_life.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +259,9 @@ CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/main.cpp.o.req
 CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/gameboard.cpp.o.requires
 CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/cell.cpp.o.requires
 CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/LifeStatus.cpp.o.requires
+CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o.requires
+CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o.requires
+CMakeFiles/game_of_life.dir/requires: CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o.requires
 
 .PHONY : CMakeFiles/game_of_life.dir/requires
 
