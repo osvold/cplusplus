@@ -4,15 +4,17 @@
 
 #include <iostream>
 #include "gameboard.h"
+#include "ConsolePrinter.h"
 
-/**
- *
- * @param columns
- * @param rows
- */
-GameBoard::GameBoard(int columns, int rows) {
+GameBoard::GameBoard(int columns, int rows, PrinterInterfaceEnum printerInterfaceEnum) {
     this->number_of_columns = columns;
     this->number_of_rows = rows;
+
+    PrinterInterface *printerInterface;
+    ConsolePrinter *printer;
+
+    printerInterface = printer = new ConsolePrinter;
+
     vector<vector<Cell>> A (static_cast<unsigned long>(this->number_of_rows), vector<Cell>(
             static_cast<unsigned long>(this->number_of_columns)));
     this->grid = A;
@@ -29,17 +31,15 @@ void GameBoard::draw() {
 
     for(row_iterator = this->grid.begin(); row_iterator != this->grid.end(); row_iterator++) {
         for(column_iterator = row_iterator->begin(); column_iterator != row_iterator->end(); column_iterator++) {
-            std::cout << column_iterator->ordinal();
+            std::cout << "  " << column_iterator->ordinal() << "  ";
 
             if(column_iterator == row_iterator->end() - 1) {
+                std::cout << endl;
                 std::cout << endl;
             }
 
         }
     }
-
-    std::cout << "" << endl;
-    std::cout << "" << endl;
 }
 
 /**

@@ -7,14 +7,16 @@
 
 #include "gameboard.h"
 #include "cell.h"
+#include "PrinterInterface.h"
 #include <cstdio>
 #include <vector>
+#include "PrinterInterfaceEnum.cpp"
 
 using namespace std;
 
 class GameBoard {
 public:
-    GameBoard(int columns, int rows);
+    GameBoard(int columns, int rows, PrinterInterfaceEnum printerInterfaceEnum);
     void draw();
     void update();
     int findAliveCount();
@@ -26,6 +28,7 @@ private:
     int number_of_rows;
     vector<vector<Cell>> grid;
     int generation;
+    PrinterInterface& printer;
     vector<Cell> findNeighbours(int row, int column);
 };
 

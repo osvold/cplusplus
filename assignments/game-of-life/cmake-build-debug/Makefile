@@ -177,32 +177,32 @@ LifeStatus.cpp.s:
 	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/LifeStatus.cpp.s
 .PHONY : LifeStatus.cpp.s
 
-PrinterInterface.o: PrinterInterface.cpp.o
+PrinterInterfaceEnum.o: PrinterInterfaceEnum.cpp.o
 
-.PHONY : PrinterInterface.o
+.PHONY : PrinterInterfaceEnum.o
 
 # target to build an object file
-PrinterInterface.cpp.o:
-	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o
-.PHONY : PrinterInterface.cpp.o
+PrinterInterfaceEnum.cpp.o:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterfaceEnum.cpp.o
+.PHONY : PrinterInterfaceEnum.cpp.o
 
-PrinterInterface.i: PrinterInterface.cpp.i
+PrinterInterfaceEnum.i: PrinterInterfaceEnum.cpp.i
 
-.PHONY : PrinterInterface.i
+.PHONY : PrinterInterfaceEnum.i
 
 # target to preprocess a source file
-PrinterInterface.cpp.i:
-	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.i
-.PHONY : PrinterInterface.cpp.i
+PrinterInterfaceEnum.cpp.i:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterfaceEnum.cpp.i
+.PHONY : PrinterInterfaceEnum.cpp.i
 
-PrinterInterface.s: PrinterInterface.cpp.s
+PrinterInterfaceEnum.s: PrinterInterfaceEnum.cpp.s
 
-.PHONY : PrinterInterface.s
+.PHONY : PrinterInterfaceEnum.s
 
 # target to generate assembly for a file
-PrinterInterface.cpp.s:
-	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterface.cpp.s
-.PHONY : PrinterInterface.cpp.s
+PrinterInterfaceEnum.cpp.s:
+	$(MAKE) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/PrinterInterfaceEnum.cpp.s
+.PHONY : PrinterInterfaceEnum.cpp.s
 
 RaspberryPiPrinter.o: RaspberryPiPrinter.cpp.o
 
@@ -327,9 +327,9 @@ help:
 	@echo "... LifeStatus.o"
 	@echo "... LifeStatus.i"
 	@echo "... LifeStatus.s"
-	@echo "... PrinterInterface.o"
-	@echo "... PrinterInterface.i"
-	@echo "... PrinterInterface.s"
+	@echo "... PrinterInterfaceEnum.o"
+	@echo "... PrinterInterfaceEnum.i"
+	@echo "... PrinterInterfaceEnum.s"
 	@echo "... RaspberryPiPrinter.o"
 	@echo "... RaspberryPiPrinter.i"
 	@echo "... RaspberryPiPrinter.s"

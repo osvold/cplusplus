@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o"
   "/Users/hans/Code/Personal/c++/assignments/game-of-life/LifeStatus.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/LifeStatus.cpp.o"
-  "/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o"
+  "/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterfaceEnum.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/PrinterInterfaceEnum.cpp.o"
   "/Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o"
   "/Users/hans/Code/Personal/c++/assignments/game-of-life/cell.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/cell.cpp.o"
   "/Users/hans/Code/Personal/c++/assignments/game-of-life/gameboard.cpp" "/Users/hans/Code/Personal/c++/assignments/game-of-life/cmake-build-debug/CMakeFiles/game_of_life.dir/gameboard.cpp.o"

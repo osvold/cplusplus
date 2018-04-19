@@ -5,15 +5,21 @@
 bool break_condition = false;
 
 void looper() {
-    GameBoard gameBoard(8, 8);
+
+    std::cout << "Initial state: " << endl;
+    GameBoard gameBoard(8, 8, PrinterInterfaceEnum::ConsolePrinter);
     gameBoard.draw();
+    std::cout << "Number of alive cells: " << gameBoard.findAliveCount() << endl;
+    std::cout << endl;
+
     while(true) {
         if(break_condition) {
             break;
         }
         gameBoard.update();
         gameBoard.draw();
-        std::cout << "Antall levende celler: " << gameBoard.findAliveCount() << endl;
+        std::cout << "Number of alive cells: " << gameBoard.findAliveCount() << endl;
+        std::cout << endl;
         std::chrono::milliseconds timespan(3000);
         std::this_thread::sleep_for(timespan);
     }

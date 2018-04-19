@@ -91,10 +91,10 @@
 		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/LifeStatus.cpp">
 			<Option target="game_of_life"/>
 		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.cpp">
+		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.h">
 			<Option target="game_of_life"/>
 		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.h">
+		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterfaceEnum.cpp">
 			<Option target="game_of_life"/>
 		</Unit>
 		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp">

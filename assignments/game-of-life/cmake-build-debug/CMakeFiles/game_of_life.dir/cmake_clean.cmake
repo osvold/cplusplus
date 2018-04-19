@@ -3,9 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/game_of_life.dir/gameboard.cpp.o"
   "CMakeFiles/game_of_life.dir/cell.cpp.o"
   "CMakeFiles/game_of_life.dir/LifeStatus.cpp.o"
-  "CMakeFiles/game_of_life.dir/PrinterInterface.cpp.o"
   "CMakeFiles/game_of_life.dir/RaspberryPiPrinter.cpp.o"
   "CMakeFiles/game_of_life.dir/ConsolePrinter.cpp.o"
+  "CMakeFiles/game_of_life.dir/PrinterInterfaceEnum.cpp.o"
   "game_of_life.pdb"
   "game_of_life"
 )

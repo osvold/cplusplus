@@ -3,4 +3,4 @@ project(game_of_life)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(game_of_life main.cpp gameboard.cpp cell.cpp cell.h gameboard.h LifeStatus.cpp PrinterInterface.h PrinterInterface.cpp RaspberryPiPrinter.h RaspberryPiPrinter.cpp ConsolePrinter.cpp ConsolePrinter.h)
+add_executable(game_of_life main.cpp gameboard.cpp cell.cpp cell.h gameboard.h LifeStatus.cpp PrinterInterface.h ConsolePrinter.cpp ConsolePrinter.h PrinterInterfaceEnum.cpp)
