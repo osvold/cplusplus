@@ -14,7 +14,7 @@ void looper() {
         gameBoard.update();
         gameBoard.draw();
         std::cout << "Antall levende celler: " << gameBoard.findAliveCount() << endl;
-        std::chrono::milliseconds timespan(1000);
+        std::chrono::milliseconds timespan(3000);
         std::this_thread::sleep_for(timespan);
     }
 }
