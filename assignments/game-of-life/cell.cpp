@@ -20,10 +20,6 @@ bool Cell::isAlive() {
     return this->cell_status == LifeStatus::Alive;
 }
 
-bool Cell::isDead() {
-    return this->cell_status == LifeStatus::Dead;
-}
-
 char Cell::ordinal() {
     if(this->isAlive()) return '0';
     return '.';

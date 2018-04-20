@@ -13,7 +13,6 @@ public:
     ~Cell();
     void setStatus(LifeStatus lifeStatus);
     bool isAlive();
-    bool isDead();
     char ordinal();
 private:
     LifeStatus cell_status;

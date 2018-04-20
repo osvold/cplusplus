@@ -82,25 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.cpp">
-			<Option target="game_of_life"/>
-		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/ConsolePrinter.h">
-			<Option target="game_of_life"/>
-		</Unit>
 		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/LifeStatus.cpp">
-			<Option target="game_of_life"/>
-		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterface.h">
-			<Option target="game_of_life"/>
-		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/PrinterInterfaceEnum.cpp">
-			<Option target="game_of_life"/>
-		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.cpp">
-			<Option target="game_of_life"/>
-		</Unit>
-		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/RaspberryPiPrinter.h">
 			<Option target="game_of_life"/>
 		</Unit>
 		<Unit filename="/Users/hans/Code/Personal/c++/assignments/game-of-life/cell.cpp">
